@@ -1,29 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portifólio José Guilherme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <script>document.documentElement.className += ' js';</script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<link rel="stylesheet" href="style/style.css">
-<script src="./script/main.js" defer></script>
 <body>
-    <div class="tag-list">
-        <div class="inner">
-            <div class="tag"><span>#HTML</span></div>
-            <div class="tag"><span>#CSS</span></div>
-            <div class="tag"><span>#PHP</span></div>
-            <div class="tag"><span>#JavaScript</span></div>
-            <div class="tag"><span>#React</span></div>
-            <div class="tag"><span>#Taiwilind</span></div>
-            <div class="tag"><span>#Laravel</span></div>
-            <div class="tag"><span>#Postman</span></div>
-            <div class="tag"><span>#Docker</span></div>
-            <div class="tag"><span>#SQL</span></div>
+    
+    <nav class="menu js-menu">
+        <div class="tag-list">
+            <div class="inner">
+                <div class="tag"><span>HTML</span></div>
+                <div class="tag"><span>CSS</span></div>
+                <div class="tag"><span>PHP</span></div>
+                <div class="tag"><span>JavaScript</span></div>
+                <div class="tag"><span>React</span></div>
+                <div class="tag"><span>Taiwilind</span></div>
+                <div class="tag"><span>Laravel</span></div>
+                <div class="tag"><span>Postman</span></div>
+                <div class="tag"><span>Docker</span></div>
+                <div class="tag"><span>SQL</span></div>
+                <div class="fade"></div>
+            </div>  
         </div>
-        <div class="fade"></div>
+    <ul>
+        <li><a href="#animais">Projetos</a></li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="">Curriculo</a></li>
+        <li><a href="https://github.com/Guilherme-Santt?tab=repositories">Meu GitHub →</a></li>
+    </ul>
+    </nav>
+    <section class="grid-section animais js-scroll" id="animais">
+    <h1 class="titulo">Meus projetos</h1>
+    <ul class="animais-lista js-tabmenu">
+        <li>
+            <img src="img/imagem1.jpg">
+        </li>
+        <li>
+            <img src="img/imagem2.jpg">
+        </li>
+        <li>
+            <img src="img/imagem3.jpg">
+        </li>
+        <li>
+            <img src="img/imagem4.jpg">
+        </li>
+        <li>
+            <img src="img/imagem5.jpg">
+        </li>
+        <li>
+            <img src="img/imagem6.jpg">
+        </li>
+    </ul>
+    <div class="animais-descricao js-tabcontent">
+        <section>
+            <h2>Projeto1</h2>
+            <p>Descrição</p>
+        </section>
+        <section>
+            <h2>Projeto2</h2>
+            <p>Descrição.</p>
+        </section>
+        <section>
+            <h2>Projeto3</h2>
+            <p>Descrição.</p>
+        </section>
+        <section>
+            <h2>Projeto 4</h2>
+            <p>Descrição</p>
+        </section>
+        <section>
+            <h2>Projeto5</h2>
+            <p>Descrição</p>
+        </section>
+        <section>
+            <h2>Leão</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus perferendis optio voluptates, a, sint eius voluptatum sapiente illum exercitationem doloribus nam eaque maiores id, cum repellat. Quaerat sint eos fugiat.</p>
+        </section>
+        </div>
+    </section>
+  
+
+    <section class="grid-section faq js-scroll" id="faq">
+        <h1 class="titulo">FAQ</h1>
+        <dl class="faq-lista js-accordion">
+        <dt>Minha trajetória</dt>
+        <dd>Minha carreira profissional iniciou-se como repositor de loja, em um shopping para animais, tendo desenvolvimento em contato pessoal com o público. Comecei na carreira de técnologia em uma empresa responsável por software para gestão de laboratórios como analísta técnico em suporte. Na mesma empresa iniciei minha primeira oportunidade em desenvolvimento. Exercendo a função de full stack, com as linguagens JavaScript, PHP & Framework's: React, Laravel e +.</dd>
+        <dt>Quas linguagens & Framework's tem conhecimento?</dt>
+        <dd>PHP, JavaScript, React.Js, Node.Js, Laravel.</dd>
+        <dt>Meu diferencial?</dt>
+        <dd>Iniciei minha trajetória profissional aos 15 anos. Tive diferentes experiências em diferentes setores e ramos profissionais. Me considero um profissional dedicado, obstinado e com muito foco em me desenvolver profissionalmente e pessoal. Atualmente possuo diferentes qualificações no setor de técnologia.</dd>
+        <dt>Quais minhas formações</dt>
+        <dd>Sou formado em análise e desenvolvimento de sistemas. Possuo cursos profissionalizantes com mais de 600 horas.<dd>
+        </dl>
+    </section>
+  
+    <section class="grid-section contato js-scroll" id="contato">
+        <h1 class="titulo">Contato</h1>
+        <div class="mapa">
+        <img src="img/mapa.png">
     </div>
-    <div style="height: 2000px;"><p>Topo</p></div>
-    <button style="border: none; font-size: 2rem;" id="btn">^</button>
+    <ul class="dados">
+        <li>guisant@icloud.com</li>
+        <li>+55 (11) 9999-9999</li>
+        <li>Cotia, São Paulo</li>
+        <li><button class="btn js-button">Entrar em contato</button></li>
+    </ul>
+    </section>
+
+    <div class="modal high">
+        <div class="janela-modal">
+        <form action="">
+            <h2>Fale conosco</h2>
+            <label>Dígite seu E-mail:</label>
+            <input type="text">
+            <input class="btn" type="submit">
+        </form>
+        </div>
+    </div>
+
+    <footer class="copy">
+        <p>Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>  
 </body>
 </html>
